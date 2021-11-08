@@ -18,7 +18,7 @@ function hoho:CreateWindow(hohotitle)
 	hohoUI.Parent = game.Players.LocalPlayer.PlayerGui
 	hohoUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	hohoUI.ResetOnSpawn = false
-	
+
 	game:GetService("UserInputService").InputBegan:Connect(function(input, chat)
 		if not chat and input.KeyCode == Enum.KeyCode.RightControl then
 			if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Hoho_Hub").Enabled == true then
@@ -851,6 +851,7 @@ function hoho:CreateWindow(hohotitle)
 						ListButton.Text = newlistvalue or "List"
 						ListButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 						ListButton.TextSize = 14.000
+						ListButton.BackgroundTransparency = 1
 
 						ListButton.MouseButton1Click:Connect(function()
 							DropdownHolder:TweenSize(UDim2.new(0, 350, 0, 25), "InOut", "Quad", 0.08, true)
@@ -900,23 +901,3 @@ function hoho:CreateWindow(hohotitle)
 
 	return hohoWindow
 end
-
-local window = hoho:CreateWindow("Window")
-local page = window:NewPage("Page")
-local selection = page:NewSection("Selection")
-local button = selection:CreateButton("Button", function()
-	print("Click")
-end)
-local dr_down = selection:CreateDropdown("Drop", {"A","B","C"}, function(sec)
-	print(sec)
-end)
-local sli = selection:CreateSlider("Slider",1,100, function(num)
-	print(num)
-end)
-local textb = selection:CreateTextBox("Tbox", "LOL", function(text)
-	print(text)
-end)
-local tog = selection:CreateToggle("Togle", function(text)
-	print(text)
-end)
-local lab = selection:CreateLabel("Lab")
