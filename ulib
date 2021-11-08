@@ -1,6 +1,6 @@
+local hoho = {}
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
-local hoho = {}
 
 function hoho:CreateWindow(hohotitle)
 	local hohoUI = Instance.new("ScreenGui")
@@ -901,3 +901,4 @@ function hoho:CreateWindow(hohotitle)
 
 	return hohoWindow
 end
+return hoho
