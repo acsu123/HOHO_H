@@ -172,7 +172,9 @@ wait(1)
 TOTEXT.Text = "Check Game Is SP"
 local sp = false
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
-    --loadstring bf script
+    delay(5,function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/BloxFRUITOBFED.lua", true))()
+    end)
     sp = true
 else
   game:GetService("TweenService"):Create(SUCCESS, TweenInfo.new(0.5), {Size = UDim2.new(0,0,0,0)}):Play()
