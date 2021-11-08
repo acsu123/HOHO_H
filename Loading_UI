@@ -172,7 +172,6 @@ wait(1)
 TOTEXT.Text = "Check Game Is SP"
 local sp = false
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/BloxFRUITOBFED.lua", true))()
     sp = true
 else
 	TOTEXT.Text = "Not SP"
@@ -312,3 +311,7 @@ CoppyDis.MouseButton1Click:Connect(function()
     Drop:Destroy()
 	end
 end)
+if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/BloxFRUITOBFED.lua", true))()
+end
+
