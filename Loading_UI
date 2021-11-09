@@ -21,7 +21,7 @@ local GG = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
 
 Drop.Name = "Drop"
-Drop.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Drop.Parent = game.CoreGui
 Drop.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Drop_2.Name = "Drop"
@@ -101,7 +101,7 @@ local Drop = Instance.new("ImageLabel")
 local TOTEXT = Instance.new("TextLabel")
 
 LoadUI.Name = "LoadUI"
-LoadUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LoadUI.Parent = game.CoreGui
 LoadUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 SUCCESS.Name = "SUCCESS"
@@ -210,7 +210,7 @@ local UICorner_3 = Instance.new("UICorner")
 --Properties:
 
 Discord.Name = "Discord"
-Discord.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 DIS.Name = "DIS"
@@ -312,6 +312,6 @@ CoppyDis.MouseButton1Click:Connect(function()
 	end
 end)
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/BloxFRUITOBFED.lua", true))()
+    --loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/BloxFRUITOBFED.lua", true))()
 end
 
