@@ -15,16 +15,16 @@ function hoho:CreateWindow(hohotitle)
 	--Properties:
 
 	hohoUI.Name = "Hoho_Hub"
-	hohoUI.Parent = game.Players.LocalPlayer.PlayerGui
+	hohoUI.Parent = game.CoreGui
 	hohoUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	hohoUI.ResetOnSpawn = false
 
 	game:GetService("UserInputService").InputBegan:Connect(function(input, chat)
 		if not chat and input.KeyCode == Enum.KeyCode.RightControl then
 			if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Hoho_Hub").Enabled == true then
-				game.Players.LocalPlayer.PlayerGui:FindFirstChild("Hoho_Hub").Enabled = false
+				ggame.CoreGui:FindFirstChild("Hoho_Hub").Enabled = false
 			else
-				game.Players.LocalPlayer.PlayerGui:FindFirstChild("Hoho_Hub").Enabled = true
+				game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = true
 			end
 		end
 	end)
