@@ -173,6 +173,9 @@ TOTEXT.Text = "Check Game Is SP"
 local sp = false
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
     sp = true
+    delay(5, function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitV2.lua", true))()
+    end)
 else
 	TOTEXT.Text = "Not SP"
   game:GetService("TweenService"):Create(SUCCESS, TweenInfo.new(0.5), {Size = UDim2.new(0,0,0,0)}):Play()
@@ -180,6 +183,8 @@ else
   LoadUI:Destroy()
 end
 repeat wait() until sp == true
+wait(1)
+TOTEXT.Text = "Game SP"
 wait(1)
 game:GetService("TweenService"):Create(LOAD, TweenInfo.new(1), {Size = UDim2.new(0.629, 0,0.147, 0)}):Play()
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
@@ -311,7 +316,3 @@ CoppyDis.MouseButton1Click:Connect(function()
     Drop:Destroy()
 	end
 end)
-if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitOBF.lua"))()
-end
-
