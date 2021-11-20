@@ -174,7 +174,7 @@ local sp = false
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
     sp = true
     delay(5, function()
-    	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitV2.1.lua", true))()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitV2.2.lua", true))()
     end)
 else
 	TOTEXT.Text = "Not SP"
