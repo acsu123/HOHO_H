@@ -13,6 +13,13 @@ local player = game.Players.LocalPlayer
 local result, code = pcall(function()
     return LocalizationService:GetCountryRegionForPlayerAsync(player)
 end)
+local sp = false
+local sp_list = {7449423635,2753915549,4442272183}
+for i,v in pairs(sp_list) do
+	if game.PlaceId == v then
+		sp = true
+	end
+end
 
 local Drop = Instance.new("ScreenGui")
 local Drop_2 = Instance.new("ImageLabel")
@@ -170,14 +177,8 @@ wait(1)
 TOTEXT.Text = game_name()
 wait(1)
 TOTEXT.Text = "Check Game Is SP"
-local sp = false
-if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
-    sp = true
-    delay(5, function()
-    	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitV2.2.lua", true))()
-    end)
-else
-	TOTEXT.Text = "Not SP"
+if sp == false then
+  TOTEXT.Text = "Not SP"
   game:GetService("TweenService"):Create(SUCCESS, TweenInfo.new(0.5), {Size = UDim2.new(0,0,0,0)}):Play()
   wait(.5)
   LoadUI:Destroy()
@@ -316,3 +317,8 @@ CoppyDis.MouseButton1Click:Connect(function()
     Drop:Destroy()
 	end
 end)
+if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then -- BLOX FRUIT
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitV2.2.lua", true))()
+end
+
+
