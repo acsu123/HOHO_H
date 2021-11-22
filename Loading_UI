@@ -13,6 +13,35 @@ local player = game.Players.LocalPlayer
 local result, code = pcall(function()
     return LocalizationService:GetCountryRegionForPlayerAsync(player)
 end)
+function pe_Button()
+local ui = Instance.new("ScreenGui")
+ui.Name = "Toggle HOHO"
+ui.Parent = game.CoreGui
+ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local OPENCLOSE = Instance.new("TextButton")
+OPENCLOSE.Name = "Button"
+OPENCLOSE.Parent = ui
+OPENCLOSE.BackgroundColor3 = Color3.fromRGB(0, 0, 102)
+OPENCLOSE.BorderSizePixel = 0
+OPENCLOSE.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+OPENCLOSE.Size = UDim2.new(0.0447916649, 0, 0.0845824406, 0)
+OPENCLOSE.Text = "Toggle"
+OPENCLOSE.TextColor3 = Color3.fromRGB(255, 255, 255)
+OPENCLOSE.TextScaled = true
+OPENCLOSE.TextSize = 14.000
+OPENCLOSE.TextWrapped = true
+Instance.new("UICorner",OPENCLOSE)
+OPENCLOSE.MouseButton1Click:Connect(function()
+    if game.CoreGui:FindFirstChild("Hoho_Hub") then
+		if game.CoreGui:FindFirstChild("Hoho_Hub").Enabled == true then
+			game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = false
+		else
+			game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = true
+		end
+	end
+end)
+end
 local sp = false
 local sp_list = {7449423635,2753915549,4442272183}
 for i,v in pairs(sp_list) do
@@ -322,6 +351,7 @@ if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruit_V2.3_PC.lua", true))()
 	else --PE
     		loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/Scripts/BloxFruit_V2.3_PE_SP.lua", true))()
+		pe_Button()
 	end
 end
 
