@@ -33,8 +33,8 @@ OPENCLOSE.TextSize = 14.000
 OPENCLOSE.TextWrapped = true
 Instance.new("UICorner",OPENCLOSE)
 OPENCLOSE.MouseButton1Click:Connect(function()
-    if game.CoreGui:FindFirstChild("Library") then
-		game.CoreGui:FindFirstChild("Library").Enabled = not game.CoreGui:FindFirstChild("Library").Enabled
+    if game.CoreGui:FindFirstChild("Hoho_Hub") then
+		game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = not game.CoreGui:FindFirstChild("Hoho_Hub").Enabled
 	end
 end)
 end
@@ -344,8 +344,8 @@ CoppyDis.MouseButton1Click:Connect(function()
 end)
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then -- BLOX FRUIT
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitPC_v2.4c.lua", true))()
-	local UserInputService = game:GetService("UserInputService")
-	if not (UserInputService.KeyboardEnabled) then
+	if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
+	else
 		pe_Button()
 	end
 end
