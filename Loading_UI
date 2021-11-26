@@ -34,11 +34,7 @@ OPENCLOSE.TextWrapped = true
 Instance.new("UICorner",OPENCLOSE)
 OPENCLOSE.MouseButton1Click:Connect(function()
     if game.CoreGui:FindFirstChild("Library") then
-		if game.CoreGui:FindFirstChild("Library").Enabled == true then
-			game.CoreGui:FindFirstChild("Library").Enabled = false
-		else
-			game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = true
-		end
+		game.CoreGui:FindFirstChild("Library").Enabled = not game.CoreGui:FindFirstChild("Library").Enabled
 	end
 end)
 end
