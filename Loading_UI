@@ -33,9 +33,9 @@ OPENCLOSE.TextSize = 14.000
 OPENCLOSE.TextWrapped = true
 Instance.new("UICorner",OPENCLOSE)
 OPENCLOSE.MouseButton1Click:Connect(function()
-    if game.CoreGui:FindFirstChild("Hoho_Hub") then
-		if game.CoreGui:FindFirstChild("Hoho_Hub").Enabled == true then
-			game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = false
+    if game.CoreGui:FindFirstChild("Library") then
+		if game.CoreGui:FindFirstChild("Library").Enabled == true then
+			game.CoreGui:FindFirstChild("Library").Enabled = false
 		else
 			game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = true
 		end
@@ -347,10 +347,8 @@ CoppyDis.MouseButton1Click:Connect(function()
 	end
 end)
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then -- BLOX FRUIT
-	if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then --PC
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitPC_v2.4c.lua", true))()
-	else --PE
-    		loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/Scripts/BloxFruit_V2.3_PE_SP.lua", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitPC_v2.4c.lua", true))()
+	if game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then --PE
 		pe_Button()
 	end
 end
