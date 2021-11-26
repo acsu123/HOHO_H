@@ -348,7 +348,8 @@ CoppyDis.MouseButton1Click:Connect(function()
 end)
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then -- BLOX FRUIT
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitPC_v2.4c.lua", true))()
-	if game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then --PE
+	local UserInputService = game:GetService("UserInputService")
+	if not (UserInputService.KeyboardEnabled) then
 		pe_Button()
 	end
 end
