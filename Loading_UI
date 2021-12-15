@@ -344,11 +344,7 @@ CoppyDis.MouseButton1Click:Connect(function()
 	end
 end)
 if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then -- BLOX FRUIT
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/bloxfruitv2.6b.lua'))()
-	if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
-	else
-		pe_Button()
-	end
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/LoadHOho.lua'))()
 end
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
