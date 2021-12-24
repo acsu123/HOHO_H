@@ -39,7 +39,7 @@ OPENCLOSE.MouseButton1Click:Connect(function()
 end)
 end
 local sp = false
-local sp_list = {7449423635,2753915549,4442272183}
+local sp_list = {7449423635,2753915549,4442272183,4520749081,6381829480,5931540094}
 for i,v in pairs(sp_list) do
 	if game.PlaceId == v then
 		sp = true
