@@ -33,9 +33,9 @@ OPENCLOSE.TextSize = 14.000
 OPENCLOSE.TextWrapped = true
 Instance.new("UICorner",OPENCLOSE)
 OPENCLOSE.MouseButton1Click:Connect(function()
-    if game.CoreGui:FindFirstChild("Hoho_Hub") then
+	pcall(function()
 		game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = not game.CoreGui:FindFirstChild("Hoho_Hub").Enabled
-	end
+	end)
 end)
 end
 local sp = false
@@ -343,15 +343,20 @@ CoppyDis.MouseButton1Click:Connect(function()
     Drop:Destroy()
 	end
 end)
-if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId == 5931540094 then
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/LoadHOho.lua'))()
+if game.PlaceId == 7449423635 or game.PlaceId == 2753915549 or game.PlaceId == 4442272183 then
+	
+end
+if game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId == 5931540094 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/KingPiece.lua'))()
 end
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
-	if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
-	else
-		pe_Button()
-	end
 end
-
-
+pe_Button()
+game:GetService("UserInputService").InputBegan:Connect(function(input, chat)
+	if not chat and input.KeyCode == Enum.KeyCode.RightControl then
+	pcall(function()
+		game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = not game.CoreGui:FindFirstChild("Hoho_Hub").Enabled
+	end)
+	end
+end)
