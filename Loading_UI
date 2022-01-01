@@ -365,8 +365,8 @@ end
 pe_Button()
 game:GetService("UserInputService").InputBegan:Connect(function(input, chat)
 	if not chat and input.KeyCode == Enum.KeyCode.RightControl then
-	pcall(function()
-		game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = not game.CoreGui:FindFirstChild("Hoho_Hub").Enabled
-	end)
+		pcall(function()
+			game.CoreGui:FindFirstChild("Hoho_Hub").Enabled = not game.CoreGui:FindFirstChild("Hoho_Hub").Enabled
+		end)
 	end
 end)
