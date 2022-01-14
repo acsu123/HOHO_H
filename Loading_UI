@@ -1,3 +1,6 @@
+spawn(function()
+	if game.CoreGui:FindFirstChild("Hoho_Hub") then game.CoreGui:FindFirstChild("Hoho_Hub"):Destroy() end
+end)
 function pe_Button()
 local ui = Instance.new("ScreenGui")
 ui.Name = "Toggle HOHO"
@@ -42,6 +45,7 @@ end
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
+repeat wait() until game.CoreGui:FindFirstChild("Hoho_Hub")
 pe_Button()
 game:GetService("UserInputService").InputBegan:Connect(function(input, chat)
 	if not chat and input.KeyCode == Enum.KeyCode.RightControl then
