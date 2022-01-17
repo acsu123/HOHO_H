@@ -1,6 +1,5 @@
-spawn(function()
-	if game.CoreGui:FindFirstChild("Hoho_Hub") then game.CoreGui:FindFirstChild("Hoho_Hub"):Destroy() end
-end)
+if game.CoreGui:FindFirstChild("Hoho_Hub") then game.CoreGui:FindFirstChild("Hoho_Hub"):Destroy() end
+wait()
 function pe_Button()
 local ui = Instance.new("ScreenGui")
 ui.Name = "Toggle HOHO"
