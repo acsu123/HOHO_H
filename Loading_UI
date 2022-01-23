@@ -41,6 +41,10 @@ if game.PlaceId == 6284583030 then
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/PetXfolder/PetSimXMobile.lua'))()
 	end
 end
+if game.PlaceId == 5303541547 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AlongNgu/alonebruh/main/twoPiecehoho.lua"))()
+end
+
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
