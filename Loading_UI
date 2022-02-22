@@ -44,6 +44,9 @@ end
 if game.PlaceId == 5303541547 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/AlongNgu/alonebruh/main/twoPiecehoho.lua"))()
 end
+if game.PlaceId == 7655489843 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AlongNgu/alonebruh/main/ABXHohoTRASHVCL.lua"))()
+end
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
