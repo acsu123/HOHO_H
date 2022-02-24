@@ -49,14 +49,13 @@ if game.PlaceId == 7655489843 then
 end
 if game.PlaceId == 198116126 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/TradeLands.lua"))()
-	
-end
-if workspace:FindFirstChild('.Ignore') then
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 	pcall(function()
 		repeat wait() until game.CoreGui:FindFirstChild("Hoho_Hub")
 		game.CoreGui:FindFirstChild("Hoho_Hub").Button.Text = "HoHo Loaded"
 	end)
+end
+if workspace:FindFirstChild('.Ignore') then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
 repeat wait() until game.CoreGui:FindFirstChild("Hoho_Hub")
 wait(1)
