@@ -153,9 +153,7 @@ TOTEXT.TextWrapped = true
 
 TOTEXT.Text = "Check Game"
 wait(1)
-TOTEXT.Text = game_name()
-wait(1)
-TOTEXT.Text = "Check Game Is SP"
+TOTEXT.Text = "Check Game ..."
 game:GetService("TweenService"):Create(SUCCESS, TweenInfo.new(0.5), {Size = UDim2.new(0,0,0,0)}):Play()
 wait(1)
 game:GetService("TweenService"):Create(LOAD, TweenInfo.new(1), {Size = UDim2.new(0.629, 0,0.147, 0)}):Play()
