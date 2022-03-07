@@ -1,5 +1,5 @@
 if game.CoreGui:FindFirstChild("Hoho_Hub") then game.CoreGui:FindFirstChild("Hoho_Hub"):Destroy() end
-
+--[[
 local Drop = Instance.new("ScreenGui")
 local Drop_2 = Instance.new("ImageLabel")
 local Clound = Instance.new("ImageLabel")
@@ -286,7 +286,7 @@ CoppyDis.MouseButton1Click:Connect(function()
     		Drop:Destroy()
 	end
 end)
-
+]]
 
 
 
