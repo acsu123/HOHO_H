@@ -28,6 +28,7 @@ drop:NewDrop({1,'asdiowna',"aweqq"})
 local txtbox = tab:Textbox("Textbox","write here",function(val)
 	print(val)
 end)
+lib:Nof("notifi",3)
 ]]
 
 if not isfile or not readfile or not writefile then return print("exploit not sp") end
