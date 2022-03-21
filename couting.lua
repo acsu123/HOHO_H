@@ -18,6 +18,9 @@ local c_l = {}
 function c_l.re(t)
     timer.Text = t or "0/0"
 end
+function c_l.de()
+    Clocker.Parent = nil
+end
   return c_l
 end
 
