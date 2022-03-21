@@ -1,4 +1,4 @@
---ui by Gui_HD(Nova) (https://v3rmillion.net/showthread.php?tid=962783) becauz im too lazy open rbx studio and make a it :P
+--ui by Gui_HD(Nova) (https://v3rmillion.net/showthread.php?tid=962783) becauz im too lazy open rbx studio so i skidned it :P
 local modulez = {}
 
 local function CreateInstance(cls,props)
