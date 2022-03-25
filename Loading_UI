@@ -379,6 +379,9 @@ end
 if game.GameId == 848145103 or game.PlaceId == 848145103 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/Paid/DunegonQuest.lua"))()
 end
+if game.GameId == 286090429 or game.PlaceId == 286090429 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/Arsenal.lua"))()
+end
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
