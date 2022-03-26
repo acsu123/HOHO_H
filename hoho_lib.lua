@@ -164,7 +164,7 @@ function hoho:Window(hub, the_game_name, main_color)
 	local UICornerd = Instance.new("UICorner")
 
 
-	DevGui.Name = "GuiLIB"..math.random(56,999)
+	DevGui.Name = "Hoho_Hub"
 	DevGui.Parent = game.CoreGui or game.Players.LocalPlayer:WaitForChild("PlayerGui")
 	DevGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
