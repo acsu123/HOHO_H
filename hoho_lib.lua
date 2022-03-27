@@ -41,6 +41,10 @@ end
 if not isfile("HoHo_Tog_Fast.txt") then
 	writefile("HoHo_Tog_Fast.txt", "false")
 end
+
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+
 local HoHo_Video_Display = readfile("HoHo_Video_Display.txt")
 local HoHo_Video_Id = readfile("HoHo_Video_Id.txt")
 local HoHo_Tog_Fast = readfile("HoHo_Tog_Fast.txt")
