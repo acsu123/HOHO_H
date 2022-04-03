@@ -1226,7 +1226,6 @@ function hoho:Window(hub, the_game_name, main_color)
 	videoId.TextWrapped = true
 	videoId.FocusLost:Connect(function()
 		HoHo_Video_Id = videoId.Text
-		writefile("HoHo_Video_Id.txt",videoId.Text)
 		VideoBackground.Video = "rbxassetid://"..HoHo_Video_Id
 	end)
 	
@@ -1248,14 +1247,12 @@ function hoho:Window(hub, the_game_name, main_color)
 	ToggVideo.MouseButton1Click:Connect(function()
 		if HoHo_Video_Display == "true" then
 			HoHo_Video_Display = ""
-			writefile("HoHo_Video_Display.txt","false")
 			ripple(ToggVideo, mouse.X, mouse.Y)
 			ToggVideo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			VideoBackground.Visible = false
 			BlackBackground.BackgroundTransparency = 0
 		else
 			HoHo_Video_Display = "true"
-			writefile("HoHo_Video_Display.txt","true")
 			ripple(ToggVideo, mouse.X, mouse.Y)
 			ToggVideo.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
 			VideoBackground.Visible = true
@@ -1312,12 +1309,10 @@ function hoho:Window(hub, the_game_name, main_color)
 	ToggleFastLoad.MouseButton1Click:Connect(function()
 		if HoHo_Tog_Fast == "true" then
 			HoHo_Tog_Fast = ""
-			writefile("HoHo_Tog_Fast.txt","false")
 			ripple(ToggleFastLoad, mouse.X, mouse.Y)
 			ToggleFastLoad.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		else
 			HoHo_Tog_Fast = "true"
-			writefile("HoHo_Tog_Fast.txt","true")
 			ripple(ToggleFastLoad, mouse.X, mouse.Y)
 			ToggleFastLoad.BackgroundColor3 = main_color or Color3.fromRGB(0, 255, 127)
 		end
