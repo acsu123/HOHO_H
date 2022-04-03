@@ -166,10 +166,6 @@ function hoho:Window(hub, the_game_name, main_color)
 	local openning = false
 	
 	local DevGui = Instance.new("ScreenGui")
-	if syn then
-		syn.protect_gui(DevGui)
-	end
-	
 	local Top_Bar = Instance.new("Frame")
 	local BlackBackground = Instance.new("Frame")
 	local UICorner = Instance.new("UICorner")
