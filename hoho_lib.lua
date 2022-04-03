@@ -31,23 +31,12 @@ end)
 lib:Nof("notifi",3)
 ]]
 
-if not isfile or not readfile or not writefile then return print("exploit not sp") end
-if not isfile("HoHo_Video_Display.txt") then
-	writefile("HoHo_Video_Display.txt", "false")
-end
-if not isfile("HoHo_Video_Id.txt") then
-	writefile("HoHo_Video_Id.txt", "5608327482")
-end
-if not isfile("HoHo_Tog_Fast.txt") then
-	writefile("HoHo_Tog_Fast.txt", "false")
-end
-
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 
-local HoHo_Video_Display = readfile("HoHo_Video_Display.txt")
-local HoHo_Video_Id = readfile("HoHo_Video_Id.txt")
-local HoHo_Tog_Fast = readfile("HoHo_Tog_Fast.txt")
+local HoHo_Video_Display = "false"
+local HoHo_Video_Id = "0"
+local HoHo_Tog_Fast = "true"
 
 local hoho = {}
 local tween = game:GetService("TweenService")
