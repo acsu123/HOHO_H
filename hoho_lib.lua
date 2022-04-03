@@ -1358,5 +1358,5 @@ function hoho:Window(hub, the_game_name, main_color)
 	end
 	return hoho_wind
 end
-
+_G.hoho = hoho
 return hoho
