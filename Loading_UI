@@ -394,6 +394,11 @@ end
 if game.GameId == 142823291 or game.PlaceId == 142823291 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/GAME/main/muder%20mys..2.txt"))()
 end
+
+if game.GameId == 3851622790 or game.PlaceId == 3851622790 then
+	loadstring(game:HttpGet("https://pastebin.com/raw/xUGJt9Ry", true))() -- break in
+end
+
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
