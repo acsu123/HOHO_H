@@ -388,6 +388,12 @@ end
 if game.GameId == 2116452049 or game.PlaceId == 2116452049 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/SteveOnePiece.lua"))()
 end
+if game.GameId == 6872265039 or game.PlaceId == 6872265039 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/GAME/main/bedwar.txt"))()
+end
+if game.GameId == 142823291 or game.PlaceId == 142823291 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/GAME/main/muder%20mys..2.txt"))()
+end
 if workspace:FindFirstChild('.Ignore') then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()
 end
