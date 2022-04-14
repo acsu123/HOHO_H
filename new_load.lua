@@ -117,4 +117,15 @@ local list = {
   335132309="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/muder%20mys..2.txt'))()",
   636649648="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/muder%20mys..2.txt'))()",
   9283900542="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/muder%20mys..2.txt'))()",
+  
+  --Giant Survival!
+  4003872968="loadstring(game:HttpGet('https://pastebin.com/raw/zABEESgr', true))()",
 }
+
+if list[game.GameId] ~= nil and list[game.PlaceId] ~= nil then
+  
+else
+  game.Players.LocalPlayer:Kick("game not support")
+end
+
+
