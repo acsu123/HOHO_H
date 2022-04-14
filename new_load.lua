@@ -123,7 +123,7 @@ local list = {
 }
 
 if list[game.GameId] ~= nil and list[game.PlaceId] ~= nil then
-  
+  loadstring(list[game.GameId])()
 else
   game.Players.LocalPlayer:Kick("game not support")
 end
