@@ -4,6 +4,7 @@ local list = {
   [6872274481] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/bedwar.txt'))()",
   [8444591321] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/bedwar.txt'))()",
   [8560631822] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/bedwar.txt'))()",
+  [2619619496] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/bedwar.txt'))()",
   
   --Element Battle Ground
   [566399244] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/elementBattlegr.lua'))()",
@@ -122,8 +123,8 @@ local list = {
   [4003872968]="loadstring(game:HttpGet('https://pastebin.com/raw/zABEESgr', true))()",
 }
 
-if list[game.GameId] ~= nil and list[game.PlaceId] ~= nil then
-  loadstring(list[game.GameId])()
+if list[game.PlaceId] ~= nil then
+  loadstring(list[tonumber(game.PlaceId)])()
 else
   game.Players.LocalPlayer:Kick("game not support")
 end
