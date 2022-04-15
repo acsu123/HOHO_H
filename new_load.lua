@@ -121,6 +121,11 @@ local list = {
   
   --Giant Survival!
   [4003872968]="loadstring(game:HttpGet('https://pastebin.com/raw/zABEESgr', true))()",
+
+	--Field Trip Z
+	[4954096313]="loadstring(game:HttpGet('https://pastebin.com/raw/aY7Z3Nd3', true))()",
+	[5096191125]="loadstring(game:HttpGet('https://pastebin.com/raw/aY7Z3Nd3', true))()",
+	[5941839954]="loadstring(game:HttpGet('https://pastebin.com/raw/aY7Z3Nd3', true))()",
 }
 
 if list[game.PlaceId] ~= nil then
