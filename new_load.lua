@@ -61,6 +61,10 @@ local list = {
 
     --Mad City
     [498490399]="loadstring(game:HttpGet('https://pastebin.com/raw/EwnNCfin', true))()",
+	
+    --vn piece
+    [1493595237]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/vn%20Piece%20script-obfuscated.lua', true))()",
+
 }
 
 local function MakeDraggable(topbarobject, object)
